@@ -1,0 +1,24 @@
+<%- include('../partials/header') %>
+
+<main class="main main-beers">
+    <div class="container">
+        <% beers.forEach(item => { %> 
+            <section class="section section-beers d-flex justify-content-between">
+                    <div class="beer-images">
+                        <img src="<%= item.image %>" alt="<%= item.name %>">
+                    </div>
+                    <div class="beer-stats">
+                        <h2 class="beer-name">
+                            <a href="/<%= brew %>/<%= item.id %>">
+                                <%= item.name %>
+                            </a>
+                        </h2>
+                        <p class="price">Price: <%= item.price %></p>
+                    </div>
+                </section>
+                <% }) %>
+        </div>
+</main>
+
+
+<%- include('../partials/footer') %>

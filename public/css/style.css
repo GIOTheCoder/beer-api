@@ -1,0 +1,53 @@
+*{box-sizing: border-box;}
+
+.header-h1 {
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.nav-link, .prev-and-next {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.nav-link:hover {
+    color: crimson;
+}
+
+.main-home {
+    color: antiquewhite;
+    font-family: 'Cardo', serif;
+}
+
+.section-beers {
+    margin: 20px 0;
+    padding: 20px 10px;
+    /* background-color: antiquewhite; */
+    border: 2px solid rgb(155, 117, 67);
+    border-radius: 5px;
+    color: antiquewhite;
+    
+}
+
+.section-beers, .prev-and-next a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+.section-beers, .prev-and-next a:hover {
+    color: crimson;
+}
+
+.beer-name {
+    color: white;
+    font-family: 'Cardo', serif;
+    font-size: 18pt;
+    text-transform: uppercase;
+}
+
+body {
+    background: rgb(39, 37, 34);
+}

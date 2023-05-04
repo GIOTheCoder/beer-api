@@ -1,0 +1,42 @@
+<%- include('../partials/header') %>
+
+<main class="main main-single">
+    <div class="container">
+        <section class="section section-single">
+            <!-- prev and next -->
+            <div class="prev-and-next d-flex justify-content-around">
+                <p class="prev">
+                    <% if(beer.id > 1) { %>
+                            <a href="/<%= brew %>/<%= beer.id-1 %>">Prev</a>
+                        <% } %>
+                </p>
+                <p class="next">
+                    <% if (beer.id <= count) { %> 
+                            <a href="/<%= brew %>/<%= beer.id + 1 %>">Next</a>
+                        <% } %>
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="<%= beer.image %>" alt=" <%= beer.name %>" class="img-fluid w-50">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <%= beer.name %>
+                        </li>
+                        <li class="list-group-item">
+                            Price: <%= beer.price %>
+                        </li>
+                        <li class="list-group-item">
+                            Rating: <%= beer.rating.average %> | Reviews: <%= beer.rating.reviews %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<%- include('../partials/footer') %>
